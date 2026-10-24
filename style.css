@@ -1,7 +1,7 @@
-body{
+ body{
     background: #000;
 }
-
+/*
 #box{
     height: 200px;
     width: 200px;
@@ -26,4 +26,39 @@ nav ul{
     color: white;
     text-decoration: none;
     margin-right: 1rem;
+} */
+
+
+/* ISSKE BATH DOSRI VIDEO KA CODE HOGA*/
+
+#page1{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #000, #fff);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#page2{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, #fff, #000);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#page3{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #000, #fff);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#box{
+    height: 200px;
+    width: 200px;
+    background-color: goldenrod;
 }
