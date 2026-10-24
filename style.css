@@ -7,3 +7,23 @@ body{
     width: 200px;
     background-color: white;
 }
+
+nav{
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+h1{
+    color: white;
+    font-size: 2rem;
+}
+nav ul{
+    display: flex;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+}
