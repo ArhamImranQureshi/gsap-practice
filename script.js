@@ -37,6 +37,15 @@ gsap.from("#page2 #box",{
     duration:3,
     scale:0,
     delay:1,
+    // scroll Trigger aese use hota hai
+    scrollTrigger:{
+        trigger:"#page2 #box",
+        scroller:"body",
+        markers:true,
+        start:"top 50%",
+        scrub:2, // yh true se zyada smooth scroll krta hai, 2 se zyada smooth ho jata hai
+        //scrub:true, // ye scroll smooth kr de ga 
+    }
 })
 gsap.from("#page3 #box",{
     rotate: 360,
