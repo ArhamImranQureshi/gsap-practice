@@ -32,4 +32,15 @@ gsap.from("#page1 #box",{
     scale:0,
     delay:1,
 })
-
+gsap.from("#page2 #box",{
+    rotate: 360,
+    duration:3,
+    scale:0,
+    delay:1,
+})
+gsap.from("#page3 #box",{
+    rotate: 360,
+    duration:3,
+    scale:0,
+    delay:1,
+})
