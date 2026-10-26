@@ -54,17 +54,24 @@
 //     delay:1,
 // })
 
+// gsap.to("#page3 h1",{
+//     transform:"translateX(-500%)",
+//     scrollTrigger:{
+//         trigger:"#page3",
+//         scroller:"body",
+//         markers:true,
+//         start:"top 0%",
+//         end:"top -100%",
+//         scrub:5,
+//         pin:true,
+//     },
+// }
+// )
 
-gsap.to("#page3 h1",{
-    transform:"translateX(-500%)",
-    scrollTrigger:{
-        trigger:"#page3",
-        scroller:"body",
-        markers:true,
-        start:"top 0%",
-        end:"top -100%",
-        scrub:5,
-        pin:true,
-    },
-}
-)
+
+// Yh video three ka scene hai
+
+var initialPath= `M 10 100 Q 250 100 490 100`;
+var finalPath = `M 10 100 Q 250 100 490 100`;
+
+
