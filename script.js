@@ -71,7 +71,24 @@
 
 // Yh video three ka scene hai
 
-var initialPath= `M 10 100 Q 250 100 490 100`;
-var finalPath = `M 10 100 Q 250 100 490 100`;
+var initialPath= `M 10 100 Q 500 100 990 100`;
+var finalPath = `M 10 100 Q 500 100 990 100`;
 
+var hmm = document.querySelector("#hmm")
+hmm.addEventListener("mousemove",function(dets){
+    path = `M 10 100 Q ${dets.x} ${dets.y} 990 100`
 
+    gsap.to("svg path",{
+        attr:{d:path},
+        duration:0.3,
+        ease:"power3.out",
+    })
+})
+
+hmm.addEventListener("mouseleave",function(){
+    gsap.to("svg path",{
+        attr:{d:initialPath},
+        duration:1.5,
+        ease:"elastic.out(1,0.1)",
+    })
+})
