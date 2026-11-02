@@ -1,0 +1,55 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>GSAP</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/all.js" integrity="sha512-Lih9jQSv5CS2t9EJ8XAWw04Rb29RSYolcBApmENWnv/QeUF+G7GazUwvnVlQr9zfb3gfCcl42mCRiL46Z5G+pA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html> -->
+    <!-- <div id="page1">
+        <div id="box">
+
+        </div>
+    </div>
+     <div id="page3">
+        <h1>
+            Arham is the best
+        </h1>
+    </div>
+     <div id="page2">
+        <div id="box">
+            
+        </div>
+    </div> -->
+    <!-- <div id="hmm">
+        <svg width="1000" height="200" xmlns="http://www.w3.org/2000/svg">
+  <path d="M 10 100 Q 500 100 990 100" stroke="white" fill="none" />
+</svg>
+    </div> -->
+    
+    <!-- Yh bhai 4th video hai -->
+
+    <!-- <div id="main">
+        
+            
+        </div>
+    </div> -->

@@ -98,6 +98,8 @@
 
 var main = document.querySelector("#main");
 var cursor = document.querySelector("#cursor");
+var menu = document.querySelector("nav i");
+var cross = document.querySelector("#full-header i");
 
 main.addEventListener("mousemove",function(dets){
     gsap.to(cursor,{
@@ -107,3 +109,26 @@ main.addEventListener("mousemove",function(dets){
     })
 })
 
+var tl = gsap.timeline();
+tl.to("#full-header",{
+    right:0,
+    duration:1
+
+})
+tl.from("#full-header h4",{
+    x:150,
+    duration:0.8,
+    stagger:0.2,
+    opacity:0
+})
+
+
+tl.pause();
+//   Yh 5th video start hn rhe hai
+
+menu.addEventListener("click",function(){
+    tl.play();
+})
+cross.addEventListener("click",function(){
+    tl.reverse();
+})

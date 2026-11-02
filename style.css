@@ -1,8 +1,8 @@
- body{
+ /* body{
     background: #000;
     overflow-x: hidden;
-    margin: 0;
-}
+    margin: 0px;
+} */
 /*
 #box{
     height: 200px;
@@ -69,21 +69,82 @@ nav ul{
     text-wrap:nowrap;
     margin:0px;
 } */
+
+
+/* Yh 4th video hai */
+
+/* 
 #hmm{
     background-color: darkblue;
+}*/
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-x: hidden;
 }
-
 #main{
-    height:100%;
+    height: 100vh !important;
     width:100%;
-    background-color: #000;
+    background-image: url(https://images.unsplash.com/photo-1499346030926-9a72daac6c63?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D);
+    background-size: cover;
+    background-position: center bottom;
 }
 #cursor{
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background-color:#F3C77C;
+    background-color:#000;
     position:fixed;
     top:0;
     left:0;
+    z-index: 999;
+} 
+nav{
+    margin: 0px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    padding: 0px 40px;
+    color:#fff;
 }
+
+nav h2{
+    font-size: 30px;
+}
+nav i{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#full-header{
+    height: 100vh;
+    width:30%;
+    position: absolute;
+    top: 0;
+    right: -40%;
+    background:#ffffff80;
+    padding: 150px 60px;
+    backdrop-filter: blur(10px);
+}
+#full-header h4{
+    font-size: 50px;
+    margin:20px !important;
+    
+}
+
+#full-header i{
+    font-size: 35px;
+    padding: 10px;
+    background:#fff;
+    border: 1px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 5%;
+    right:5%;
+    font-weight: 500;
+}
+/* yh 5th video hai */
+
