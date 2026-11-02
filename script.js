@@ -100,6 +100,16 @@ var main = document.querySelector("#main");
 var cursor = document.querySelector("#cursor");
 var menu = document.querySelector("nav i");
 var cross = document.querySelector("#full-header i");
+var h1 = document.querySelector("#main h1");
+var h1Text = h1.textContent;
+var splittedText = h1Text.split("");
+var clutter = ""
+splittedText.forEach(function(e){
+    clutter += `<span>${e}</span>`;
+});
+
+h1.innerHTML = clutter;
+
 
 main.addEventListener("mousemove",function(dets){
     gsap.to(cursor,{
