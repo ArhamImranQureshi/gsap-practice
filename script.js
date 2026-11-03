@@ -95,7 +95,7 @@
 
 
 // 4th video bhai
-
+var body = document.querySelector('body');
 var main = document.querySelector("#main");
 var cursor = document.querySelector("#cursor");
 var menu = document.querySelector("nav i");
@@ -103,15 +103,35 @@ var cross = document.querySelector("#full-header i");
 var h1 = document.querySelector("#main h1");
 var h1Text = h1.textContent;
 var splittedText = h1Text.split("");
+var halfText = splittedText.length/2;
+
+
 var clutter = ""
-splittedText.forEach(function(e){
-    clutter += `<span>${e}</span>`;
+splittedText.forEach(function(e,i){
+    if(i<halfText){
+        clutter += `<span class="a">${e}</span>`;
+    } else{
+        clutter += `<span class="b">${e}</span>`;
+    }
 });
 
 h1.innerHTML = clutter;
 
-
-main.addEventListener("mousemove",function(dets){
+gsap.from(".a",{
+    opacity:0,
+    y:50,
+    duration:1,
+    delay:0.5,
+    stagger:0.15
+})
+gsap.from(".b",{
+    opacity:0,
+    y:50,
+    duration:1,
+    delay:0.5,
+    stagger:-0.15
+})
+body.addEventListener("mousemove",function(dets){
     gsap.to(cursor,{
         x:dets.x,
         y:dets.y,
