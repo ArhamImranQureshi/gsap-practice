@@ -162,3 +162,19 @@ menu.addEventListener("click",function(){
 cross.addEventListener("click",function(){
     tl.reverse();
 })
+
+
+gsap.to("#marque",{
+    tranform:'translateX(-100%)',
+    duration:2,
+    repeat:-1,
+    ease:'none',
+})
+
+// window.addEventListener("wheel",function(dets){
+//     if(dets.deltaY>0){
+
+//     } else if(dets.deltaY<0){
+
+//     }
+// })
