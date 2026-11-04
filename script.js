@@ -7,7 +7,6 @@
 // //     yoyo: true
 // // })
 
-
 // // var tl = gsap.timeline();
 
 // // tl.to("logo",{
@@ -22,7 +21,6 @@
 // //    delay:1,
 // //    duration:1,
 // // })
-
 
 // // ISSE KE DOSRI VIDEO KA CODE HOGA
 
@@ -44,7 +42,7 @@
 //         markers:true,
 //         start:"top 50%",
 //         scrub:2, // yh true se zyada smooth scroll krta hai, 2 se zyada smooth ho jata hai
-//         //scrub:true, // ye scroll smooth kr de ga 
+//         //scrub:true, // ye scroll smooth kr de ga
 //     }
 // })
 // gsap.from("#page3 #box",{
@@ -67,7 +65,6 @@
 //     },
 // }
 // )
-
 
 // Yh video three ka scene hai
 
@@ -93,9 +90,8 @@
 //     })
 // })
 
-
 // 4th video bhai
-var body = document.querySelector('body');
+var body = document.querySelector("body");
 var main = document.querySelector("#main");
 var cursor = document.querySelector("#cursor");
 var menu = document.querySelector("nav i");
@@ -103,73 +99,86 @@ var cross = document.querySelector("#full-header i");
 var h1 = document.querySelector("#main h1");
 var h1Text = h1.textContent;
 var splittedText = h1Text.split("");
-var halfText = splittedText.length/2;
+var halfText = splittedText.length / 2;
 
-
-var clutter = ""
-splittedText.forEach(function(e,i){
-    if(i<halfText){
-        clutter += `<span class="a">${e}</span>`;
-    } else{
-        clutter += `<span class="b">${e}</span>`;
-    }
+var clutter = "";
+splittedText.forEach(function (e, i) {
+  if (i < halfText) {
+    clutter += `<span class="a">${e}</span>`;
+  } else {
+    clutter += `<span class="b">${e}</span>`;
+  }
 });
 
 h1.innerHTML = clutter;
 
-gsap.from(".a",{
-    opacity:0,
-    y:50,
-    duration:1,
-    delay:0.5,
-    stagger:0.15
-})
-gsap.from(".b",{
-    opacity:0,
-    y:50,
-    duration:1,
-    delay:0.5,
-    stagger:-0.15
-})
-body.addEventListener("mousemove",function(dets){
-    gsap.to(cursor,{
-        x:dets.x,
-        y:dets.y,
-        duration:1,
-    })
-})
+gsap.from(".a", {
+  opacity: 0,
+  y: 50,
+  duration: 1,
+  delay: 0.5,
+  stagger: 0.15,
+});
+gsap.from(".b", {
+  opacity: 0,
+  y: 50,
+  duration: 1,
+  delay: 0.5,
+  stagger: -0.15,
+});
+body.addEventListener("mousemove", function (dets) {
+  gsap.to(cursor, {
+    x: dets.x,
+    y: dets.y,
+    duration: 1,
+  });
+});
 
 var tl = gsap.timeline();
-tl.to("#full-header",{
-    right:0,
-    duration:1
-
-})
-tl.from("#full-header h4",{
-    x:150,
-    duration:0.8,
-    stagger:0.2,
-    opacity:0
-})
-
+tl.to("#full-header", {
+  right: 0,
+  duration: 1,
+});
+tl.from("#full-header h4", {
+  x: 150,
+  duration: 0.8,
+  stagger: 0.2,
+  opacity: 0,
+});
 
 tl.pause();
 //   Yh 5th video start hn rhe hai
 
-menu.addEventListener("click",function(){
-    tl.play();
-})
-cross.addEventListener("click",function(){
-    tl.reverse();
-})
+menu.addEventListener("click", function () {
+  tl.play();
+});
+cross.addEventListener("click", function () {
+  tl.reverse();
+});
 
-
-gsap.to("#marque",{
-    tranform:'translateX(-100%)',
-    duration:2,
-    repeat:-1,
-    ease:'none',
-})
+window.addEventListener("wheel", function (dets) {
+  if (dets.deltaY > 0) {
+    gsap.to("#marque", {
+      transform: "translateX(-200%)",
+      duration: 5,
+      repeat: -1,
+      ease: "none",
+    });
+    gsap.to("#marque img", {
+      rotate: 180,
+    });
+  } else {
+    gsap.to("#marque", {
+      transform: "translateX(0)",
+      duration: 5,
+      repeat: -1,
+      ease: "none",
+    });
+    gsap.to("#marque img", {
+      rotate: 0,
+    });
+  }
+});
 
 // window.addEventListener("wheel",function(dets){
 //     if(dets.deltaY>0){
